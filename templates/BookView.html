@@ -1,0 +1,57 @@
+<div class="row-fluid">
+
+    <form class="form-horizontal span12">
+
+        <fieldset>
+
+            <legend>Book Details</legend>
+            <br/>
+
+            <div class="row">
+                <div class="span8">
+
+                    <div class="control-group">
+                        <label for="wineId" class="control-label">Id:</label>
+
+                        <div class="controls">
+                            <input id="bookId" name="id" type="text" value="<%= id === null ? '' : id %>"
+                                   disabled/>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="title" class="control-label">title:</label>
+
+                        <div class="controls">
+                            <input type="text" id="title" name="title" value="<%= title %>"/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="author" class="control-label">author:</label>
+
+                        <div class="controls">
+                            <input type="text" id="author" name="author" value="<%= author %>"/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="description" class="control-label">description:</label>
+
+                        <div class="controls">
+                            <input type="text" id="description" name="description" value="<%= description %>"/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </fieldset>
+
+    </form>
+    <button onclick="window.history.back()" class="btn btn-primary"><i class="icon-white icon-arrow-left"></i> Back to list</button>
+
+</div>
